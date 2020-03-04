@@ -39,6 +39,11 @@ footer {
 
 // end header of the footer
 
+.links {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+}
 // the foot of the footer
 
 
@@ -48,6 +53,7 @@ footer {
     justify-content: space-between;
     background-color: #000;
     @media (max-width: 767px) {
+        padding: 48px 0;
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -67,6 +73,9 @@ footer {
 // last div child in the footer
 .footer__inline--last {
     div{
+        @media (max-width: 767px) {
+            width: 100%;
+        } 
         button {
             @extend %btn;
             padding: 15px 24px;
@@ -76,11 +85,19 @@ footer {
             border-radius: 10px;
             border: none;
             outline: none;
-            margin-left: 5px;
+            margin-left: 5px; 
+            @media (max-width) {
+                width: 80%;
+            }     
         }
     }
     p {
         color: #fff;
+        @media (max-width: 767px) {
+            position: absolute;           
+            top: 110%;
+            left: 30%;
+        }
     }
 }
 
@@ -91,7 +108,7 @@ footer {
     border: none;
     outline: none;
     background-color: $light_grey;
-    border-radius: 10px;
+    border-radius: 14px;
     cursor: pointer;
     &:hover {
         color: $bright_red;
