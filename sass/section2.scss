@@ -1,0 +1,82 @@
+//variable
+$color-slid: hsl(0, 0%, 98%);
+$color2: hsl(227, 12%, 61%);
+
+
+.title-slider{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.swiper-container {
+    position: relative;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    width: 90%;
+    height: 50%;
+    
+    .swiper-slide {
+        padding: 15px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 16px;
+    width: 33.33%;
+    background: $color-slid;
+    @media (max-width: 375px) {
+        width: 100%;
+    }
+   
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    p{
+        color: $color2;
+    }
+    .slider-box{
+        margin-top: 30px;
+    }
+    .slider-box:hover .img-box img{
+      transform: scale(1.07);
+      transition: all ease 0.3s;
+
+
+}
+
+.img-box img{
+  
+    margin-top: -250px;
+
+}
+
+   
+}
+
+
+
+}
+@media screen and (min-width:375px){
+
+    .swiper-container{
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+}
