@@ -1,0 +1,124 @@
+$bright_red : hsl(12, 88%, 59%);
+$light_grey: hsl(0, 0%, 98%);
+
+
+
+footer {
+    padding: 0;
+    margin: 0;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+// header of the footer
+.footer__header {
+    display: flex;
+    padding: 48px;
+    justify-content: space-between;
+    background-color: $bright_red;
+    color: #fff;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        text-align: center;
+        padding: 48px 15px;
+    }
+    button {
+        @extend %btn;
+        height: 48px;
+        padding: 0 15px;
+        align-self: center;
+    }
+    h2 {
+        font-size: 48px;
+        width: 50%;
+        align-self: center;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
+// end header of the footer
+
+// the foot of the footer
+
+
+.footer__foot {
+    display: flex;
+    padding: 48px;
+    justify-content: space-between;
+    background-color: #000;
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+
+// the logo and the social media
+.footer__social {
+    .footer--social-media {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+// last div child in the footer
+.footer__inline--last {
+    div{
+        button {
+            @extend %btn;
+            padding: 15px 24px;
+        }
+        input {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin-left: 5px;
+        }
+    }
+    p {
+        color: #fff;
+    }
+}
+
+
+
+
+%btn {
+    border: none;
+    outline: none;
+    background-color: $light_grey;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        color: $bright_red;
+    }
+}
+
+.footer_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                color: $bright_red;
+            }
+        }
+    }
+    
+}
+
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+}
