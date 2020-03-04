@@ -2,9 +2,9 @@ body {
     font-family: 'Be Vietnam', ;
     background-color: hsla(227, 12%, 61%, 0.247);
 }
-nav{
-    position: static;
-}
+// nav{
+//     position: fixed;
+// }
 
 .container{
     display: flex;
@@ -60,7 +60,8 @@ nav{
             font-family: 'Be Vietnam', ;
 
             &:hover {
-                box-shadow: 0 0 30px rgb(116, 116, 116);
+                box-shadow: 0 0 20px rgb(116, 116, 116);
+                transition: 0.3s;
             }
             @media only screen and (max-width:900px) {
                 display: none;
@@ -78,6 +79,10 @@ nav{
     box-shadow: 0 0 40px rgb(116, 116, 116);
     padding: 30px;
     border-radius: 8px;
+    // position: absolute;
+    // z-index: 5;
+    background-color: white;
+    // left: 53%;
 
     ul {
         margin-right: 45px;

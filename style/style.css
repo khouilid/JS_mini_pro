@@ -1,3 +1,173 @@
+body {
+  font-family: "Be Vietnam";
+  background-color: rgba(144, 149, 167, 0.247); }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto; }
+  .container .nav--list {
+    display: flex;
+    list-style: none; }
+    @media only screen and (max-width: 900px) {
+      .container .nav--list {
+        display: none; } }
+    .container .nav--list a {
+      text-decoration: none;
+      margin-left: 30px;
+      color: black; }
+      .container .nav--list a:hover {
+        color: #f25f3a; }
+  .container .nav--btn .menu {
+    display: none; }
+    @media only screen and (max-width: 900px) {
+      .container .nav--btn .menu {
+        display: block; } }
+  .container .nav--btn .menu2 {
+    display: none; }
+  .container .nav--btn button {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #f25f3a;
+    color: white;
+    font-family: "Be Vietnam"; }
+    .container .nav--btn button:hover {
+      box-shadow: 0 0 20px #747474;
+      transition: 0.3s; }
+    @media only screen and (max-width: 900px) {
+      .container .nav--btn button {
+        display: none; } }
+
+.nav--list2 {
+  display: none;
+  margin: auto;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 0 40px #747474;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: white; }
+  .nav--list2 ul {
+    margin-right: 45px;
+    text-align: center;
+    list-style: none; }
+    .nav--list2 ul li {
+      margin-top: 20px; }
+      .nav--list2 ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700; }
+        .nav--list2 ul li a:hover {
+          color: #f25f3a; }
+
+footer {
+  padding: 0;
+  margin: 0;
+  font-family: 'Be Vietnam', sans-serif; }
+
+.footer__header {
+  display: flex;
+  padding: 48px;
+  justify-content: space-between;
+  background-color: #f25f3a;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .footer__header {
+      flex-direction: column;
+      text-align: center;
+      padding: 48px 15px; } }
+  .footer__header button {
+    height: 48px;
+    padding: 0 15px;
+    align-self: center;
+    font-family: 'Be Vietnam', sans-serif; }
+  .footer__header h2 {
+    font-size: 48px;
+    width: 50%;
+    align-self: center; }
+    @media (max-width: 767px) {
+      .footer__header h2 {
+        width: 100%; } }
+
+.links {
+  flex: 2;
+  display: flex;
+  justify-content: space-around; }
+
+.footer__foot {
+  display: flex;
+  padding: 48px;
+  justify-content: space-between;
+  background-color: #000; }
+  @media (max-width: 767px) {
+    .footer__foot {
+      padding: 48px 0;
+      flex-direction: column-reverse;
+      text-align: center; } }
+
+.footer__social .footer--social-media {
+  margin-top: 20px; }
+
+@media (max-width: 767px) {
+  .footer__inline--last div {
+    width: 100%; } }
+
+.footer__inline--last div button {
+  padding: 15px 24px; }
+
+.footer__inline--last div input {
+  padding: 15px;
+  border-radius: 30px;
+  font-family: 'Be Vietnam', sans-serif;
+  border: none;
+  outline: none;
+  margin-left: 5px; }
+  @media (max-width) {
+    .footer__inline--last div input {
+      width: 80%; } }
+
+.footer__inline--last p {
+  color: #fff; }
+  @media (max-width: 767px) {
+    .footer__inline--last p {
+      position: absolute;
+      top: 110%;
+      left: 30%; } }
+
+.footer__header button, .footer__inline--last div button {
+  border: none;
+  outline: none;
+  background-color: #fafafa;
+  font-family: 'Be Vietnam', sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer; }
+  .footer__header button:hover, .footer__inline--last div button:hover {
+    color: #f25f3a; }
+
+.footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .footer_list li {
+    margin-bottom: 10px; }
+    .footer_list li a {
+      text-decoration: none;
+      color: #fff; }
+      .footer_list li a:hover {
+        color: #f25f3a; }
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: block;
+  padding: 10px; }
+
 .section1 {
   font-family: 'Be Vietnam', sans-serif;
   font-size: 16px;
@@ -33,3 +203,7 @@
 
 .sect {
   display: flex; }
+
+body {
+  margin: 0;
+  padding: 0; }

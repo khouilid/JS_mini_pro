@@ -1,0 +1,22 @@
+{
+  "name": "js_mini_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khouilid/JS_mini_pro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khouilid/JS_mini_pro/issues"
+  },
+  "homepage": "https://github.com/khouilid/JS_mini_pro#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
